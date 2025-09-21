@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  color-scheme: dark;
+  --bg-void: #05040f;
+  --bg-panel: rgba(15, 13, 35, 0.7);
+  --bg-panel-strong: rgba(24, 19, 54, 0.9);
+  --text-primary: #f3f4ff;
+  --text-secondary: rgba(225, 227, 255, 0.72);
+  --accent: #8c7bff;
+  --grid-line: rgba(117, 108, 176, 0.16);
+  --plasma-orange: #ff8a4d;
+  --plasma-cyan: #38e2ff;
+  --plasma-violet: #b38bff;
+  --plasma-lime: #9effa4;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', 'Chakra Petch', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at 20% -10%, rgba(140, 123, 255, 0.35), transparent 55%),
+    radial-gradient(circle at 80% 0%, rgba(56, 226, 255, 0.35), transparent 50%),
+    linear-gradient(180deg, #05040f 0%, #08061b 40%, #0b0829 100%);
+  color: var(--text-primary);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+select {
+  font-family: inherit;
+}
+
+::selection {
+  background: rgba(140, 123, 255, 0.4);
+}
